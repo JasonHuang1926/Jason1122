@@ -25,7 +25,9 @@
                                 <rect key="frame" x="354" y="706" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.29532626699796216" green="0.60070945683321497" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="6gd-j2-HMQ"/>
                                     <constraint firstAttribute="width" constant="60" id="ADz-5m-RJW"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="BHX-Yh-vlp"/>
                                     <constraint firstAttribute="height" constant="30" id="iNi-ii-FhG"/>
                                 </constraints>
                                 <state key="normal" title="Go"/>
@@ -37,22 +39,24 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXM-Hw-gMk">
-                                <rect key="frame" x="0.0" y="0.0" width="346" height="698"/>
+                                <rect key="frame" x="0.0" y="-130" width="414" height="828"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="828" id="S03-eZ-WWG"/>
+                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.77153155231270765" green="1" blue="0.92206453997590954" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="LXM-Hw-gMk" firstAttribute="leading" secondItem="aU4-Xq-Pwq" secondAttribute="leading" id="4mg-Hp-wc9"/>
-                            <constraint firstAttribute="trailing" secondItem="0bM-7z-Om4" secondAttribute="trailing" id="7aD-bJ-VuI"/>
-                            <constraint firstItem="aU4-Xq-Pwq" firstAttribute="width" secondItem="LXM-Hw-gMk" secondAttribute="width" id="G5o-5U-rK2"/>
-                            <constraint firstItem="0bM-7z-Om4" firstAttribute="leading" secondItem="aU4-Xq-Pwq" secondAttribute="trailing" constant="8" symbolic="YES" id="MT8-uH-WvP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0bM-7z-Om4" secondAttribute="bottom" id="PDe-AM-PQa"/>
-                            <constraint firstItem="aU4-Xq-Pwq" firstAttribute="top" secondItem="0bM-7z-Om4" secondAttribute="top" id="RtR-t8-bfG"/>
-                            <constraint firstItem="0bM-7z-Om4" firstAttribute="height" secondItem="aU4-Xq-Pwq" secondAttribute="height" id="WQv-EK-TQ3"/>
-                            <constraint firstItem="LXM-Hw-gMk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YU4-Za-Sp2"/>
-                            <constraint firstItem="aU4-Xq-Pwq" firstAttribute="top" secondItem="LXM-Hw-gMk" secondAttribute="bottom" constant="8" symbolic="YES" id="phI-5m-Vmg"/>
-                            <constraint firstItem="aU4-Xq-Pwq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="r3y-ue-xlC"/>
+                            <constraint firstItem="0bM-7z-Om4" firstAttribute="leading" secondItem="aU4-Xq-Pwq" secondAttribute="trailing" constant="8" symbolic="YES" id="1We-a9-Dgw"/>
+                            <constraint firstItem="aU4-Xq-Pwq" firstAttribute="top" secondItem="LXM-Hw-gMk" secondAttribute="bottom" constant="8" symbolic="YES" id="K7Y-pe-qDO"/>
+                            <constraint firstItem="aU4-Xq-Pwq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kjz-Hr-gH7"/>
+                            <constraint firstAttribute="trailing" secondItem="LXM-Hw-gMk" secondAttribute="trailing" id="PKW-lI-1t7"/>
+                            <constraint firstAttribute="trailing" secondItem="0bM-7z-Om4" secondAttribute="trailing" id="ZIF-v1-9LR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0bM-7z-Om4" secondAttribute="bottom" id="bXK-fq-76H"/>
+                            <constraint firstItem="0bM-7z-Om4" firstAttribute="height" secondItem="aU4-Xq-Pwq" secondAttribute="height" id="lIq-7B-7ki"/>
+                            <constraint firstItem="LXM-Hw-gMk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qYc-HG-u38"/>
+                            <constraint firstItem="aU4-Xq-Pwq" firstAttribute="top" secondItem="0bM-7z-Om4" secondAttribute="top" id="xvH-qx-QKl"/>
                         </constraints>
                     </view>
                 </viewController>
