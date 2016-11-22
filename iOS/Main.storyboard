@@ -21,27 +21,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0XO-bb-pL6">
-                                <rect key="frame" x="159" y="149" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0XO-bb-pL6">
+                                <rect key="frame" x="72" y="270" width="270" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="F00-0L-s4s"/>
+                                    <constraint firstAttribute="width" constant="270" id="zhg-Zm-4jG"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaY-Z1-Fx1">
-                                <rect key="frame" x="159" y="210" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaY-Z1-Fx1">
+                                <rect key="frame" x="72" y="340" width="270" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3Q-6b-fY1">
-                                <rect key="frame" x="159" y="266" width="46" height="30"/>
+                                <rect key="frame" x="324" y="660" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.56134147379245336" green="0.65123060038077196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.00092539059728047324" green="0.43332275322915481" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.16765203232055181" green="0.22196833495104862" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.77153155231270765" green="1" blue="0.92206453997590954" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0XO-bb-pL6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="250" id="0sR-Qu-Aa8"/>
+                            <constraint firstItem="UaY-Z1-Fx1" firstAttribute="top" secondItem="0XO-bb-pL6" secondAttribute="bottom" constant="40" id="JV8-KD-vVm"/>
+                            <constraint firstItem="UaY-Z1-Fx1" firstAttribute="centerX" secondItem="0XO-bb-pL6" secondAttribute="centerX" id="SLN-aM-flb"/>
+                            <constraint firstItem="UaY-Z1-Fx1" firstAttribute="height" secondItem="0XO-bb-pL6" secondAttribute="height" id="bYC-5n-XL8"/>
+                            <constraint firstItem="0XO-bb-pL6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hl3-Sl-Fz6"/>
+                            <constraint firstItem="UaY-Z1-Fx1" firstAttribute="width" secondItem="0XO-bb-pL6" secondAttribute="width" id="sIL-m8-vHU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btnLogin" destination="T3Q-6b-fY1" id="Reg-dH-4ku"/>
@@ -51,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+            <point key="canvasLocation" x="-98.550724637681171" y="123.09782608695653"/>
         </scene>
     </scenes>
 </document>
